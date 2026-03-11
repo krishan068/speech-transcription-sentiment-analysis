@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Speech Sentiment Analyzer</title>
+
+<style>
+
+body{
+font-family:Arial;
+text-align:center;
+background:#141e30;
+color:white;
+padding:40px;
+}
+
+.container{
+background:#243b55;
+padding:30px;
+border-radius:10px;
+width:400px;
+margin:auto;
+}
+
+button{
+padding:10px 20px;
+background:#00c6ff;
+border:none;
+color:white;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>🎤 Speech Sentiment Analyzer</h2>
+
+<form method="POST" enctype="multipart/form-data">
+
+<input type="file" name="audio" required>
+
+<br><br>
+
+<button type="submit">Upload & Analyze</button>
+
+</form>
+
+<h3>Transcribed Text:</h3>
+
+<p>{{ text }}</p>
+
+<h3>Sentiment:</h3>
+
+<p>{{ sentiment }}</p>
+
+</div>
+
+</body>
+
+</html>
